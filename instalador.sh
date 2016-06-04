@@ -9,7 +9,7 @@ echo "Instalando dependencias de Kaptis"
 sudo apt-get -y install build-essential python-opencv libopencv-dev
 
 echo "Instalando Kaptis"
-mkdir -p $HOME"/Kaptis/"
+mkdir -p $HOME"/Kaptis/grabaciones"
 cp -r * $HOME"/Kaptis/"
 
 
