@@ -36,8 +36,6 @@ class KaptisCodigo():
             cv.NamedWindow("Imagen")
             cv.CreateTrackbar("Valor threshold: ", "Imagen", self.threshold, 100, self.cambioUsuarioValores)
         
-    #Inicializador de grabacion
-    def iniciarGrabacion(self):
         codec = cv.CV_FOURCC('D', 'I', 'V', 'X') #Codificacion
         self.writer=cv.CreateVideoWriter("grabaciones/Grabacion-"+datetime.now().strftime("%b-%d_%H_%M_%S")+".avi", codec, 4, cv.GetSize(self.frame), 1)
         self.font = cv.InitFont(cv.CV_FONT_HERSHEY_SIMPLEX, 1, 1, 0, 2, 8) #Fuente para el mensaje a imprimir en el video
